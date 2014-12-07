@@ -29,7 +29,7 @@ plot(data$datetime, data$Sub_metering_1, type='l',
      main = "")
 points(data$datetime, data$Sub_metering_2, type='l', col="red")
 points(data$datetime, data$Sub_metering_3, type='l', col="blue")
-legend("topright", legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
+legend("topright", bty = "n", legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
        col=c("black", "red", "blue"), lwd=1) 
 
 plot(data$datetime, data$Global_reactive_power, type='l',
